@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "poetry-personal-assistant"
+version = "0.1.0"
+description = "A versatile personal assistant package for seamless contact management, note organization, and efficient file sorting."
+authors = ["AndriKovalchuk"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12.1"
+rich = "13.7.0"
+prompt-toolkit = "3.0.43"
+python-dateutil = "2.8.2"
+
+[tool.poetry.group.dev.dependencies]
+black = {extras = ["d"], version = "23.12.1"}
+
+[tool.poetry.scripts]
+assistant = "poetry_personal_assistant.main_run:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
